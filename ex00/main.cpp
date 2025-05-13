@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/13 15:56:09 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 16:20:23 by athonda          ###   ########.fr       */
+/*   Created: 2025/05/13 16:11:39 by athonda           #+#    #+#             */
+/*   Updated: 2025/05/13 16:20:37 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include <string>
-#include <iostream>
+#include "Animal.hpp"
 
-class Animal
+int	main(void)
 {
-public:
-	Animal(const std::string &type);
-	Animal(const Animal &other);
-	Animal	&operator=(const Animal &other);
-	~Animal();
+	Animal	a("Dog");
+	Animal	b("Cat");
+	Animal	c(a);
+	Animal	d(a);
 
-//	void	makeSound();
-	std::string	getType(void);
+	d = b;
 
-protected:
-	std::string	_type;
-};
+	std::cout << "a: " << a.getType() << std::endl;
+	std::cout << "b: " << b.getType() << std::endl;
+	std::cout << "c: " << c.getType() << std::endl;
+	std::cout << "d: " << d.getType() << std::endl;
+
+	return (0);
+}
