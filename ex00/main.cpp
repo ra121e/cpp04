@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:11:39 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 16:20:37 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/13 16:34:21 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	main(void)
 	std::cout << "b: " << b.getType() << std::endl;
 	std::cout << "c: " << c.getType() << std::endl;
 	std::cout << "d: " << d.getType() << std::endl;
+
+	a.makeSound();
 
 	return (0);
 }

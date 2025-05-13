@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 15:56:09 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 16:20:23 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/13 16:31:48 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 	Animal	&operator=(const Animal &other);
 	~Animal();
 
-//	void	makeSound();
+	void	makeSound();
 	std::string	getType(void);
 
 protected:
