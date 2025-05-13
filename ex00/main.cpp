@@ -6,12 +6,13 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:11:39 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 17:27:32 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/13 17:42:49 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include "Dog.hpp"
+#include "Cat.hpp"
 
 int	main(void)
 {
@@ -31,6 +32,8 @@ int	main(void)
 
 	Dog dog("Welsh Corgi");
 	dog.makeSound();
+	Cat cat("Mikeneko");
+	cat.makeSound();
 
 	return (0);
 }

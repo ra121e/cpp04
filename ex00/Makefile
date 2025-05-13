@@ -6,7 +6,7 @@
 #    By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/13 12:51:47 by athonda           #+#    #+#              #
-#    Updated: 2025/05/13 17:23:52 by athonda          ###   ########.fr        #
+#    Updated: 2025/05/13 17:37:34 by athonda          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ NAME = Animal
 SRC_DIR = src
 SRC_F	=	main.cpp \
 			Animal.cpp \
-			Dog.cpp
+			Dog.cpp \
+			Cat.cpp
 
 SRC = $(SRC_F:%.c=%.c)
 
