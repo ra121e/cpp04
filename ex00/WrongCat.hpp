@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/13 17:35:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 19:02:29 by athonda          ###   ########.fr       */
+/*   Created: 2025/05/13 18:54:18 by athonda           #+#    #+#             */
+/*   Updated: 2025/05/13 19:01:51 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-class Cat :
-	public Animal
+class WrongCat :
+	public WrongAnimal
 {
 public:
-	Cat(const std::string &type);
-	Cat(const Cat &other);
-	Cat	&operator=(const Cat &other);
-	~Cat();
+	WrongCat(const std::string &type);
+	WrongCat(const WrongCat &other);
+	WrongCat	&operator=(const WrongCat &other);
+	~WrongCat();
 
 	void	makeSound();
 private:
