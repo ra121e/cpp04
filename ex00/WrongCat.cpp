@@ -6,11 +6,15 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:55:25 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 18:58:08 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 23:10:01 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
+
+WrongCat::WrongCat() :
+	WrongAnimal("WrongCat")
+{}
 
 WrongCat::WrongCat(const std::string &type) :
 	WrongAnimal(type)

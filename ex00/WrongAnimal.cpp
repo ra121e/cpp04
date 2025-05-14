@@ -6,11 +6,15 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:53:17 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 19:13:27 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 23:07:37 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
+
+WrongAnimal::WrongAnimal() :
+	_type("Zygote")
+{}
 
 WrongAnimal::WrongAnimal(const std::string &type) :
 	_type(type)

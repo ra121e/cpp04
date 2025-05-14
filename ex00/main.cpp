@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:11:39 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 19:15:37 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 23:11:40 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 
 int	main(void)
 {
-	Animal	a("Monster");
-	Animal	b("Titan");
+	Animal	a;
+	Animal	b;
 	Animal	c(a);
 	Animal	d(a);
 
@@ -34,15 +34,15 @@ int	main(void)
 
 	a.makeSound();
 
-	Dog dog("Welsh Corgi");
+	Dog dog;
 	dog.makeSound();
-	Cat cat("Mikeneko");
+	Cat cat;
 	cat.makeSound();
 
 
-	const WrongAnimal* meta = new WrongAnimal("Mt.Everest");
-	const WrongAnimal* j = new WrongDog("Caaaat");
-	const WrongAnimal* i = new WrongCat("Dooooog");
+	const WrongAnimal* meta = new WrongAnimal();
+	const WrongAnimal* j = new WrongDog();
+	const WrongAnimal* i = new WrongCat();
 
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;

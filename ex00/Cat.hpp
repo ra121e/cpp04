@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:35:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 19:02:29 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 22:56:32 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ class Cat :
 	public Animal
 {
 public:
+	Cat();
 	Cat(const std::string &type);
 	Cat(const Cat &other);
 	Cat	&operator=(const Cat &other);

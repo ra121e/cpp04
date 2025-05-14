@@ -6,11 +6,15 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:12:10 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 17:26:00 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 22:56:17 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
+
+Dog::Dog() :
+	Animal("Dog")
+{}
 
 Dog::Dog(const std::string &type) :
 	Animal(type)

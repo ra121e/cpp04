@@ -6,11 +6,15 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:59:52 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 19:00:56 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 23:08:57 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongDog.hpp"
+
+WrongDog::WrongDog() :
+	WrongAnimal("WrongDog")
+{}
 
 WrongDog::WrongDog(const std::string &type) :
 	WrongAnimal(type)

@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:52:13 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 19:13:08 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 23:00:18 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 class WrongAnimal
 {
 public:
+	WrongAnimal();
 	WrongAnimal(const std::string &type);
 	WrongAnimal(const WrongAnimal &other);
 	WrongAnimal	&operator=(const WrongAnimal &other);

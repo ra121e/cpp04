@@ -6,11 +6,15 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:36:24 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/13 17:37:17 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/14 22:57:05 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
+
+Cat::Cat() :
+	Animal("Cat")
+{}
 
 Cat::Cat(const std::string &type) :
 	Animal(type)
