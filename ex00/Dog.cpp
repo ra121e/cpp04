@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:12:10 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/14 22:56:17 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/15 12:32:06 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 Dog::Dog() :
 	Animal("Dog")
-{}
+{
+	std::cout << "Dog " << _type << " default constructor called." << std::endl;
+}
 
 Dog::Dog(const std::string &type) :
 	Animal(type)
 {
-	std::cout << "Dog " << _type << " default constructor called." << std::endl;
+	std::cout << "Dog " << _type << " parametered constructor called." << std::endl;
 }
 
 Dog::Dog(const Dog &other) :

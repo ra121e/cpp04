@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:53:17 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/14 23:07:37 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/15 12:32:35 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 WrongAnimal::WrongAnimal() :
 	_type("Zygote")
-{}
+{
+	std::cout << "WrongAnimal " << type << " default constructor called." << std::endl;
+}
 
 WrongAnimal::WrongAnimal(const std::string &type) :
 	_type(type)
 {
-	std::cout << "WrongAnimal " << type << " default constructor called." << std::endl;
+	std::cout << "WrongAnimal " << type << " parametered constructor called." << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &other) :
