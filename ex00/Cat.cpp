@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:36:24 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/15 12:31:44 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/16 08:03:20 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Cat::Cat() :
 Cat::Cat(const std::string &type) :
 	Animal(type)
 {
-	std::cout << "Cat " << _type << " parametered constructor called." << std::endl;
+	std::cout << "Cat " << _type << " parameterized constructor called." << std::endl;
 }
 
 Cat::Cat(const Cat &other) :

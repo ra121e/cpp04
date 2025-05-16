@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:53:17 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/15 12:36:27 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/16 08:03:43 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ WrongAnimal::WrongAnimal() :
 WrongAnimal::WrongAnimal(const std::string &type) :
 	_type(type)
 {
-	std::cout << "WrongAnimal " << _type << " parametered constructor called." << std::endl;
+	std::cout << "WrongAnimal " << _type << " parameterized constructor called." << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &other) :
