@@ -6,7 +6,7 @@
 #    By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/15 08:21:58 by athonda           #+#    #+#              #
-#    Updated: 2025/05/18 16:54:00 by athonda          ###   ########.fr        #
+#    Updated: 2025/05/18 22:07:05 by athonda          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ SRC_DIR = src
 SRC_F	=	main.cpp \
 			Brain.cpp \
 			Animal.cpp \
-			Dog.cpp
+			Dog.cpp \
+			Cat.cpp
 
 SRC = $(SRC_F:%.c=%.c)
 
