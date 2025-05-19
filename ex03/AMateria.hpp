@@ -6,13 +6,14 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 07:53:16 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 09:45:58 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/19 19:09:27 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <string>
 #include <iostream>
+#include "ICharacter.hpp"
 
 class AMateria
 {

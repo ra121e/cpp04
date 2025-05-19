@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Ice.hpp                                            :+:      :+:    :+:   */
+/*   ICharacter.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 17:09:25 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 19:18:16 by athonda          ###   ########.fr       */
+/*   Created: 2025/05/19 18:41:42 by athonda           #+#    #+#             */
+/*   Updated: 2025/05/19 18:42:43 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include "AMateria.hpp"
+#include "ICharacter.hpp"
 
-class Ice :
-	public AMateria
-{
-	public:
-		Ice();
-		Ice(std::string const &type);
-		Ice(const Ice &other);
-//		Ice	&operator=(const Ice &other);
-		~Ice();
-
-		AMateria	*clone() const;
-		void		use(ICharacter &target);
-
-	private:
-};
+ICharacter::~ICharacter()
+{}
