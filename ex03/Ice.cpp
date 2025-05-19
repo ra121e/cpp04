@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 17:24:46 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 19:16:34 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/19 22:39:56 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Ice::~Ice()
 
 AMateria	*Ice::clone() const
 {
-	return(new Ice);
+	return(new Ice(*this));
 }
 
 void	Ice::use(ICharacter &target)
