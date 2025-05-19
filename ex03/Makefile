@@ -6,7 +6,7 @@
 #    By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/19 06:10:59 by athonda           #+#    #+#              #
-#    Updated: 2025/05/19 18:42:57 by athonda          ###   ########.fr        #
+#    Updated: 2025/05/19 23:23:51 by athonda          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ SRC_DIR = src
 SRC_F	=	main.cpp \
 			AMateria.cpp \
 			Ice.cpp \
-			ICharacter.cpp
+			ICharacter.cpp \
+			Character.cpp
 
 SRC = $(SRC_F:%.c=%.c)
 

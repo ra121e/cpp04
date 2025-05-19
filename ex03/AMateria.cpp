@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 08:40:39 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 09:45:33 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/19 23:30:59 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,9 @@ AMateria::~AMateria()
 std::string const	&AMateria::getType() const
 {
 	return (this->_type);
+}
+
+AMateria	*AMateria::clone() const
+{
+	return(new AMateria(*this));
 }

@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.hpp                                       :+:      :+:    :+:   */
+/*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 07:53:16 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 23:27:04 by athonda          ###   ########.fr       */
+/*   Created: 2025/05/19 19:52:04 by athonda           #+#    #+#             */
+/*   Updated: 2025/05/19 23:31:40 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#include <string>
-#include <iostream>
 #include "ICharacter.hpp"
 
-class AMateria
+class Character :
+	public ICharacter
 {
-	protected:
-		const std::string	_type;
-
 	public:
-		AMateria(std::string const &type);
-		AMateria();
-		AMateria(const AMateria &other);
-//		AMateria	&operator=(const AMateria &other); // becasue const
-		virtual ~AMateria();
+		Character();
+		Character(const std::string &name);
+		Character(const Character &other);
+		Character	&operator=(const Character &other);
+		~Character();
 
-		std::string const &getType() const;
+		std::string const	&getName() const;
+		void				equip(AMateria *m);
+//		void				unequip(int idex);
+//		void				use(int idx, ICharacter &target);
+	private:
+		AMateria			*_inventory[4];
+		std::string	_name;
 
-		virtual AMateria	*clone() const ;
-//		virtual void		use(ICharacter &target);
 };
