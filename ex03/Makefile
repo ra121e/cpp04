@@ -6,7 +6,7 @@
 #    By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/19 06:10:59 by athonda           #+#    #+#              #
-#    Updated: 2025/05/19 23:23:51 by athonda          ###   ########.fr        #
+#    Updated: 2025/05/20 13:39:11 by athonda          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,9 @@ SRC_F	=	main.cpp \
 			AMateria.cpp \
 			Ice.cpp \
 			ICharacter.cpp \
-			Character.cpp
+			Character.cpp \
+			IMateriaSource.cpp \
+			MateriaSource.cpp
 
 SRC = $(SRC_F:%.c=%.c)
 
