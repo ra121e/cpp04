@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 20:00:41 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 23:26:38 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:10:07 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,9 @@ void	Character::equip(AMateria *m)
 			return ;
 		}
 	}
+}
+
+void	Character::use(int idx, ICharacter &target)
+{
+	this->_inventory[idx]->use(target);
 }

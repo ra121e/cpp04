@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 09:03:50 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 14:17:33 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:12:26 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,14 +57,16 @@ int	main(void)
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
 
-	ICharacter* me = new Character("me");
+	ICharacter* ushio = new Character("Ushio");
 	AMateria* tmp;
 	tmp = src->createMateria("Ice");
-	me->equip(tmp);
+	ushio->equip(tmp);
 
-	std::cout << me->getName() << std::endl;
+	std::cout << ushio->getName() << std::endl;
 	std::cout << tmp << std::endl;
 
+	ICharacter* hakumen = new Character("Hakumen");
+	ushio->use(0, *hakumen);
 	return (0);
 
 }

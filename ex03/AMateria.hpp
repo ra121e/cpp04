@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 07:53:16 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 23:27:04 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:04:44 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ class AMateria
 		std::string const &getType() const;
 
 		virtual AMateria	*clone() const ;
-//		virtual void		use(ICharacter &target);
+		virtual void		use(ICharacter &target);
 };

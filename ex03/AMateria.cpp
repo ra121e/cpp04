@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 08:40:39 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 23:30:59 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:09:39 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,4 +53,9 @@ std::string const	&AMateria::getType() const
 AMateria	*AMateria::clone() const
 {
 	return(new AMateria(*this));
+}
+
+void		AMateria::use(ICharacter &target)
+{
+	std::cout << "AMateria: will be override." << target.getName() << std::endl;
 }

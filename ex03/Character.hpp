@@ -6,12 +6,13 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 19:52:04 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 23:31:40 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:03:56 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include "ICharacter.hpp"
+#include "AMateria.hpp"
 
 class Character :
 	public ICharacter
@@ -26,7 +27,7 @@ class Character :
 		std::string const	&getName() const;
 		void				equip(AMateria *m);
 //		void				unequip(int idex);
-//		void				use(int idx, ICharacter &target);
+		void				use(int idx, ICharacter &target);
 	private:
 		AMateria			*_inventory[4];
 		std::string	_name;
