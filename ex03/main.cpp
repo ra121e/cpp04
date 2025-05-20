@@ -6,12 +6,13 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 09:03:50 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 16:45:38 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 17:08:57 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include "Ice.hpp"
+#include "Cure.hpp"
 #include "ICharacter.hpp"
 #include "Character.hpp"
 #include "IMateriaSource.hpp"
@@ -56,6 +57,8 @@ int	main(void)
 
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
+	IMateriaSource* srcs = new MateriaSource();
+	srcs->learnMateria(new Cure());
 
 	ICharacter* ushio = new Character("Ushio");
 	AMateria* tmp;
@@ -78,6 +81,10 @@ int	main(void)
 	kirio->equip(kuin);
 	kirio->use(0, *hakumen);
 
+	AMateria *eleazar;
+	eleazar = srcs->createMateria("Cure");
+	kirio->equip(eleazar);
+	kirio->use(1, *hakumen);
 	return (0);
 
 }
