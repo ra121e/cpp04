@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 20:00:41 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 16:10:07 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:37:29 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,18 @@ void	Character::equip(AMateria *m)
 			this->_inventory[i] = m;
 			return ;
 		}
+	}
+}
+
+void	Character::unequip(int idx)
+{
+	if (this->_inventory[idx] && idx >= 0 && idx < 4)
+	{
+		this->_inventory[idx] = NULL;
+	}
+	else
+	{
+		std::cout << "the inventory number is not available." << std::endl;
 	}
 }
 

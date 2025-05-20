@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 09:03:50 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 16:12:26 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 16:45:38 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,17 @@ int	main(void)
 
 	ICharacter* hakumen = new Character("Hakumen");
 	ushio->use(0, *hakumen);
+
+	ushio->unequip(2);
+	ushio->unequip(6);
+	ushio->unequip(0);
+
+	ICharacter* kirio = new Character("kirio");
+	AMateria* kuin;
+	kuin = src->createMateria("Ice");
+	kirio->equip(kuin);
+	kirio->use(0, *hakumen);
+
 	return (0);
 
 }
