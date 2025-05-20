@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:11:39 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/14 23:11:40 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 20:27:16 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,20 @@
 
 int	main(void)
 {
-	Animal	a;
-	Animal	b;
-	Animal	c(a);
-	Animal	d(a);
 
-	d = b;
+	const Animal* a = new Animal();
+	const Animal* b = new Dog();
+	const Animal* c = new Cat();
 
-	std::cout << "a: " << a.getType() << std::endl;
-	std::cout << "b: " << b.getType() << std::endl;
-	std::cout << "c: " << c.getType() << std::endl;
-	std::cout << "d: " << d.getType() << std::endl;
+	std::cout << b->getType() << " " << std::endl;
+	std::cout << c->getType() << " " << std::endl;
+	b->makeSound(); //will output the cat sound!
+	c->makeSound();
+	a->makeSound();
 
-	a.makeSound();
-
-	Dog dog;
-	dog.makeSound();
-	Cat cat;
-	cat.makeSound();
-
+	delete a;
+	delete b;
+	delete c;
 
 	const WrongAnimal* meta = new WrongAnimal();
 	const WrongAnimal* j = new WrongDog();

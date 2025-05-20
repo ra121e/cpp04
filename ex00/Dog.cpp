@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:12:10 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/16 08:03:30 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 20:41:53 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ Dog::~Dog()
 	std::cout << "Dog " << _type << " destructor called." << std::endl;
 }
 
-void	Dog::makeSound()
+void	Dog::makeSound() const
 {
 	std::cout << "Dog " << _type << " wan wan!! " << std::endl;
 }

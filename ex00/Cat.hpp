@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:35:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/14 22:56:32 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 20:40:56 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ public:
 	Cat	&operator=(const Cat &other);
 	~Cat();
 
-	void	makeSound();
+	void	makeSound() const;
 private:
 };

@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:03:52 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/14 21:30:48 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 20:32:58 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,12 @@ Animal::~Animal()
 	std::cout << "Animal " << _type << " destructor called." << std::endl;
 }
 
-void	Animal::makeSound(void)
+void	Animal::makeSound(void) const
 {
 	std::cout << "Animal " << _type << " fjqowejfa;ojfaoiejfoiajfeoiewajfo " << std::endl;
 }
 
-std::string	Animal::getType(void)
+std::string	Animal::getType(void) const
 {
 	return (this->_type);
 }

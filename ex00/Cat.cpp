@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:36:24 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/16 08:03:20 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 20:41:09 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ Cat::~Cat()
 	std::cout << "Cat " << _type << " destructor called." << std::endl;
 }
 
-void	Cat::makeSound()
+void	Cat::makeSound() const
 {
 	std::cout << "Cat " << _type << " Nya~ Nya~ " << std::endl;
 }
