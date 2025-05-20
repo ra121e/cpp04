@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 07:53:16 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 16:04:44 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/20 19:30:42 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 class AMateria
 {
 	protected:
-		const std::string	_type;
+		std::string	_type;
 
 	public:
 		AMateria(std::string const &type);
 		AMateria();
 		AMateria(const AMateria &other);
-//		AMateria	&operator=(const AMateria &other); // becasue const
+		AMateria	&operator=(const AMateria &other); // becasue const
 		virtual ~AMateria();
 
 		std::string const &getType() const;
