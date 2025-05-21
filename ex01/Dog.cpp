@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 17:42:31 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/18 20:58:16 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 14:04:33 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ Dog::~Dog()
 	delete(this->brain);
 }
 
-void	Dog::makeSound()
+void	Dog::makeSound() const
 {
 	std::cout << "Dog " << _type << " wan wan!! " << std::endl;
 }

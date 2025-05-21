@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 21:48:40 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/18 22:11:52 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 15:48:56 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ Cat::~Cat()
 	delete (this->_brain);
 }
 
-void	Cat::makeSound()
+void	Cat::makeSound() const
 {
-	std::cout << "Cat " << _type << "Nya~~ Nya~~" << std::endl;
+	std::cout << "Cat " << _type << " Nya~~ Nya~~" << std::endl;
 }
 
 Brain	*Cat::getBrain()

@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 17:40:14 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/18 16:50:16 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 14:04:23 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ public:
 	Dog	&operator=(const Dog &other);
 	~Dog();
 
-	void	makeSound();
+	void	makeSound() const;
 	Brain	*getBrain();
 private:
 	Brain	*brain;
