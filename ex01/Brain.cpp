@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 09:39:10 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/15 12:08:22 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 19:49:57 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,27 @@ Brain::~Brain()
 	std::cout << "Brain: destructor called" <<std::endl;
 }
 
-const std::string	&Brain::getIdeas(int i)
+void		Brain::setIdeas(int i, std::string const &idea)
 {
-	return (this->ideas[i]);
+	if (i >= 0 && i < 100)
+	{
+		this->ideas[i] = idea;
+	}
+	else
+	{
+		std::cout << "Brain array(ideas) accept index 0-99" << std::endl;
+	}
+}
+
+std::string	const &Brain::getIdeas(int i) const
+{
+	if (i >= 0 && i < 100)
+	{
+		return (this->ideas[i]);
+	}
+	else
+	{
+		static std::string error = "Brain array(ideas) has index 0-99";
+		return (error);
+	}
 }

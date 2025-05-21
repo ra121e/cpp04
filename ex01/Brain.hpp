@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 08:42:31 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/15 12:06:22 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 19:52:46 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ public:
 	Brain	&operator=(const Brain &other);
 	~Brain();
 
-	const std::string	&getIdeas(int i);
+	void		setIdeas(int i, std::string const &idea);
+	std::string	const &getIdeas(int i) const;
 private:
 	std::string ideas[100];
 };

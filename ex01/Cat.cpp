@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 21:48:40 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/21 15:48:56 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 20:16:05 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,14 @@ Brain	*Cat::getBrain()
 {
 	std::cout << "Cat " << _type << " get brain pointer. " << std::endl;
 	return (this->_brain);
+}
+
+void	Cat::setIdeas(int i, std::string const &idea)
+{
+	this->_brain->setIdeas(i, idea);
+}
+
+std::string	const &Cat::getIdeas(int i) const
+{
+	return (this->_brain->getIdeas(i));
 }

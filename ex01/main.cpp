@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 11:15:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/21 15:48:04 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 20:33:03 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,27 +17,31 @@
 
 int	main(void)
 {
-//	===== Brain test =====
-//	Brain	a;
-//	Brain	b(a);
-//	Brain	c;
-//
-//	c = a;
-//
-//	for (int i = 0; i < 100; ++i)
-//	{
-//		std::cout << "Brain: a ideas[" << i << "] is" << a.getIdeas(i) << std::endl;
-//	}
-//
-//	for (int i = 0; i < 100; ++i)
-//	{
-//		std::cout << "Brain: b ideas[" << i << "] is" << b.getIdeas(i) << std::endl;
-//	}
-//
-//	for (int i = 0; i < 100; ++i)
-//	{
-//		std::cout << "Brain: c ideas[" << i << "] is" << c.getIdeas(i) << std::endl;
-//	}
+	std::cout << "===== Brain test =====" << std::endl;
+	Brain	a;
+	a.setIdeas(0, "crazy");
+	a.setIdeas(1, "berserk");
+//	a.getIdeas(100, "wrong");
+
+	Brain	b(a);
+	Brain	c;
+
+	c = a;
+
+	for (int i = 0; i < 100; ++i)
+	{
+		std::cout << "Brain: a ideas[" << i << "] is " << a.getIdeas(i) << std::endl;
+	}
+
+	for (int i = 0; i < 100; ++i)
+	{
+		std::cout << "Brain: b ideas[" << i << "] is " << b.getIdeas(i) << std::endl;
+	}
+
+	for (int i = 0; i < 100; ++i)
+	{
+		std::cout << "Brain: c ideas[" << i << "] is " << c.getIdeas(i) << std::endl;
+	}
 
 //	===== Brain test with combined class =====
 //	Dog	a;
@@ -61,26 +65,29 @@ int	main(void)
 //		std::cout << "Brain: c ideas[" << i << "] is" << c.getBrain()->getIdeas(i) << std::endl;
 //	}
 
-//	Cat	a;
-//	Cat b(a);
-//	Cat c;
-//
-//	c = a;
-//
-//	for (int i = 0; i < 100; ++i)
-//	{
-//		std::cout << "Brain: a ideas[" << i << "] is" << a.getBrain()->getIdeas(i) << std::endl;
-//	}
-//
-//	for (int i = 0; i < 100; ++i)
-//	{
-//		std::cout << "Brain: b ideas[" << i << "] is" << b.getBrain()->getIdeas(i) << std::endl;
-//	}
-//
-//	for (int i = 0; i < 100; ++i)
-//	{
-//		std::cout << "Brain: c ideas[" << i << "] is" << c.getBrain()->getIdeas(i) << std::endl;
-//	}
+	std::cout << "===== test derived instances =====" << std::endl;
+	Cat	d;
+	d.setIdeas(0, "crazy");
+	d.setIdeas(1, "berserk");
+	Cat e(d);
+	Cat f;
+
+	f = d;
+
+	for (int i = 0; i < 100; ++i)
+	{
+		std::cout << "Cat: d ideas[" << i << "] is " << d.getIdeas(i) << std::endl;
+	}
+
+	for (int i = 0; i < 100; ++i)
+	{
+		std::cout << "Cat: e ideas[" << i << "] is " << e.getIdeas(i) << std::endl;
+	}
+
+	for (int i = 0; i < 100; ++i)
+	{
+		std::cout << "Cat: f ideas[" << i << "] is " << f.getIdeas(i) << std::endl;
+	}
 
 	std::cout << "===== test Animal array by auto variables" << std::endl;
 	Dog const		akita;
