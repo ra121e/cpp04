@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 11:15:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/21 20:33:03 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 23:19:57 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,21 +90,29 @@ int	main(void)
 	}
 
 	std::cout << "===== test Animal array by auto variables" << std::endl;
-	Dog const		akita;
-	Cat const		carico;
-	Cat const		mike;
-	Dog const		shiba;
-	Animal const	*animal[4];
+	Dog		akita;
+	akita.getBrain()->setIdeas(0, "Cute is best");
 
-	std::cout << std::endl << "Here are the voices of the animals." << std::endl;
+	Cat		carico;
+	carico.getBrain()->setIdeas(0, "sleepy");
+
+	Cat		mike;
+	mike.getBrain()->setIdeas(0, "hungry");
+
+	Dog		cogi;
+	cogi.getBrain()->setIdeas(0, "hunting!!");
+	Animal	*animal[4];
+
 	animal[0] = &akita;
 	animal[1] = &carico;
 	animal[2] = &mike;
-	animal[3] = &shiba;
+	animal[3] = &cogi;
 
+	std::cout << std::endl << "Here are the voices of the animals." << std::endl;
 	for(int i = 0; i < 4; ++i)
 	{
 		animal[i]->makeSound();
+		std::cout << animal[i]->getType() << " has an idea as " << animal[i]->getIdeas(0) << std::endl;
 	}
 	std::cout << "sounds correct!!." << std::endl << std::endl;
 

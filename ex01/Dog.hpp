@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 17:40:14 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/21 14:04:23 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 23:13:40 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ public:
 
 	void	makeSound() const;
 	Brain	*getBrain();
+
+	void		setIdeas(int i, std::string const &idea);
+	std::string	const &getIdeas(int i) const;
 private:
-	Brain	*brain;
+	Brain	*_brain;
 };

@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 17:42:31 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/21 14:04:33 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 23:18:24 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ Dog::Dog() :
 {
 	std::cout << "Dog " << _type << " default constructor called." << std::endl;
 	Brain	*brain = new Brain();
-	this->brain = brain;
+	this->_brain = brain;
 }
 
 Dog::Dog(const Dog &other) :
 	Animal(static_cast<const Animal&>(other))
 {
 	std::cout << "Dog " << _type << " copy constructor called." << std::endl;
-	Brain	*brain = new Brain(*(other.brain));
-	this->brain = brain;
+	Brain	*brain = new Brain(*(other._brain));
+	this->_brain = brain;
 }
 
 Dog	&Dog::operator=(const Dog &other)
@@ -35,9 +35,9 @@ Dog	&Dog::operator=(const Dog &other)
 		std::cout << "Dog " << _type << " copy asignment operator called." << std::endl;
 		Animal::operator=(static_cast<const Animal&>(other));
 		this->_type = other._type;
-		delete (this->brain);
-		Brain	*brain = new Brain(*(other.brain));
-		this->brain = brain;
+		delete (this->_brain);
+		Brain	*brain = new Brain(*(other._brain));
+		this->_brain = brain;
 	}
 	return (*this);
 }
@@ -45,7 +45,7 @@ Dog	&Dog::operator=(const Dog &other)
 Dog::~Dog()
 {
 	std::cout << "Dog " << _type << " destructor called." << std::endl;
-	delete(this->brain);
+	delete(this->_brain);
 }
 
 void	Dog::makeSound() const
@@ -55,6 +55,16 @@ void	Dog::makeSound() const
 
 Brain	*Dog::getBrain()
 {
-	return (this->brain);
+	return (this->_brain);
 	std::cout << "Dog " << _type << " get brain pointer. " << std::endl;
+}
+
+void	Dog::setIdeas(int i, std::string const &idea)
+{
+	this->_brain->setIdeas(i, idea);
+}
+
+std::string	const &Dog::getIdeas(int i) const
+{
+	return (this->_brain->getIdeas(i));
 }
