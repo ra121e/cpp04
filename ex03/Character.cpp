@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 20:00:41 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/22 20:59:04 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/22 21:10:57 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,11 @@ void	Character::equip(AMateria *m)
 {
 	if (!m)
 		return ;
+	for (int i = 0; i < 4; ++i)
+	{
+		if (this->_inventory[i] && this->_inventory[i] == m)
+			return ;
+	}
 	for (int i = 0; i < 4; ++i)
 	{
 		if (!this->_inventory[i])
