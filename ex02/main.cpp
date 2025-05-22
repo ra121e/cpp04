@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 23:03:47 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/18 23:09:25 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/22 17:21:32 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ void printBanner(const std::string& title) {
 }
 
 int main() {
-    printBanner("Test: Attempting to instantiate Animal (should fail at compile time)");
-     Animal testAnimal; // This line should cause a compilation error because Animal is abstract.
-    // std::cout << "If you see this, Animal was instantiated (which is wrong)." << std::endl;
-    // To test this, you would uncomment the line above and try to compile.
-    // For a runnable program, we keep it commented.
-    std::cout << "(The line 'Animal testAnimal;' is commented out to allow compilation.)" << std::endl;
-    std::cout << "(To verify, uncomment it and compilation should fail.)" << std::endl;
+	std::cout << "===== test Animal class instance =====" << std::endl;
+	//Animal testAnimal; // This line should cause a compilation error because Animal is abstract.
+	// std::cout << "If you see this, Animal was instantiated (which is wrong)." << std::endl;
+	// To test this, you would uncomment the line above and try to compile.
+	// For a runnable program, we keep it commented.
+	std::cout << "(The line 'Animal testAnimal;' is commented out to allow compilation.)" << std::endl;
+	std::cout << "(To verify, uncomment it and compilation should fail.)" << std::endl;
 
 
     printBanner("Polymorphic Array of Animals (Dogs and Cats)");
@@ -96,15 +96,14 @@ int main() {
 //
 //    // Similar test for Cat can be added.
 
-    printBanner("Scope test for stack objects (Dog and Cat)");
-    {
-        std::cout << "Entering new scope..." << std::endl;
-        Dog stackDog;
-        Cat stackCat;
-        stackDog.makeSound();
-        stackCat.makeSound();
-        std::cout << "Exiting scope... Destructors for stackDog, stackCat (and their Brains) will be called." << std::endl;
-    }
+	{
+		std::cout << "Entering new scope..." << std::endl;
+		Dog stackDog;
+		Cat stackCat;
+		stackDog.makeSound();
+		stackCat.makeSound();
+		std::cout << "Exiting scope... Destructors for stackDog, stackCat (and their Brains) will be called." << std::endl;
+	}
 
 
     printBanner("All tests finished.");
