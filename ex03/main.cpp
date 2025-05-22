@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 09:03:50 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 17:08:57 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 11:13:37 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int	main(void)
 
 	ICharacter* ushio = new Character("Ushio");
 	AMateria* tmp;
-	tmp = src->createMateria("Ice");
+	tmp = src->createMateria("ice");
 	ushio->equip(tmp);
 
 	std::cout << ushio->getName() << std::endl;
@@ -77,14 +77,22 @@ int	main(void)
 
 	ICharacter* kirio = new Character("kirio");
 	AMateria* kuin;
-	kuin = src->createMateria("Ice");
+	kuin = src->createMateria("ice");
 	kirio->equip(kuin);
 	kirio->use(0, *hakumen);
 
 	AMateria *eleazar;
-	eleazar = srcs->createMateria("Cure");
+	eleazar = srcs->createMateria("cure");
 	kirio->equip(eleazar);
 	kirio->use(1, *hakumen);
+
+
+	delete (kirio);
+	delete (hakumen);
+	delete (ushio);
+
+	delete (src);
+	delete (srcs);
 	return (0);
 
 }

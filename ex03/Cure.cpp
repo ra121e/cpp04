@@ -6,14 +6,14 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 16:51:26 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/20 17:05:13 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 11:09:41 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
 Cure::Cure() :
-	AMateria("Cure")
+	AMateria("cure")
 {
 }
 

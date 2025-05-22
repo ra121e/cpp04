@@ -6,14 +6,14 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 17:24:46 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/19 22:39:56 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/21 11:09:47 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
 
 Ice::Ice() :
-	AMateria("Ice")
+	AMateria("ice")
 {}
 
 Ice::Ice(std::string const &type) :
