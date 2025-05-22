@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 09:03:50 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/21 11:13:37 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/22 21:30:09 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,8 @@ int	main(void)
 	ushio->unequip(2);
 	ushio->unequip(6);
 	ushio->unequip(0);
+
+	delete (tmp);
 
 	ICharacter* kirio = new Character("kirio");
 	AMateria* kuin;
