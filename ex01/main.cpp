@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 11:15:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/22 13:39:59 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/22 13:50:59 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,15 +116,20 @@ int	main(void)
 	Animal	*animal[4];
 
 	animal[0] = &akita;
+	animal[0]->setIdeas(1, "given to Rusian skater");
 	animal[1] = &calico;
+	animal[1]->setIdeas(1, "house cat");
 	animal[2] = &mike;
+	animal[2]->setIdeas(1, "ordinary cat");
 	animal[3] = &cogi;
+	animal[3]->setIdeas(1, "back pain");
 
 	std::cout << std::endl << "Here are the voices of the animals." << std::endl;
 	for(int i = 0; i < 4; ++i)
 	{
 		animal[i]->makeSound();
 		std::cout << animal[i]->getType() << " has an idea as " << animal[i]->getIdeas(0) << std::endl;
+		std::cout << animal[i]->getType() << " has an idea as " << animal[i]->getIdeas(1) << std::endl;
 	}
 	std::cout << "sounds correct!!." << std::endl << std::endl;
 
@@ -156,6 +161,7 @@ int	main(void)
 	{
 		pets[i]->makeSound();
 		std::cout << pets[i]->getType() << " has an idea as " << pets[i]->getIdeas(0) << std::endl;
+		std::cout << pets[i]->getType() << " has an idea as " << pets[i]->getIdeas(1) << std::endl;
 	}
 	std::cout << "sounds correct!!." << std::endl << std::endl;
 
