@@ -6,7 +6,7 @@
 /*   By: athonda <athonda@student.42singapore.sg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 11:15:38 by athonda           #+#    #+#             */
-/*   Updated: 2025/05/22 13:50:59 by athonda          ###   ########.fr       */
+/*   Updated: 2025/05/22 21:19:28 by athonda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,17 @@ int	main(void)
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::cout << "Brain: a ideas[" << i << "] is " << a.getIdeas(i) << std::endl;
+		std::cout << "Brain: a ideas[" << i << "] is " << &a.getIdeas(i) << " " << &a.getIdeas(i) << std::endl;
 	}
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::cout << "Brain: b ideas[" << i << "] is " << b.getIdeas(i) << std::endl;
+		std::cout << "Brain: b ideas[" << i << "] is " << &b.getIdeas(i) << " " << &a.getIdeas(i) << std::endl;
 	}
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::cout << "Brain: c ideas[" << i << "] is " << c.getIdeas(i) << std::endl;
+		std::cout << "Brain: c ideas[" << i << "] is " << &c.getIdeas(i) << " " << &a.getIdeas(i) << std::endl;
 	}
 
 //	===== Brain test with combined class =====
@@ -76,17 +76,17 @@ int	main(void)
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::cout << "Cat: d ideas[" << i << "] is " << d.getIdeas(i) << std::endl;
+		std::cout << "Cat: d ideas[" << i << "] is " << &d.getIdeas(i) << " " << &d.getIdeas(i) << std::endl;
 	}
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::cout << "Cat: e ideas[" << i << "] is " << e.getIdeas(i) << std::endl;
+		std::cout << "Cat: e ideas[" << i << "] is " << &e.getIdeas(i) << " " << &d.getIdeas(i) << std::endl;
 	}
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::cout << "Cat: f ideas[" << i << "] is " << f.getIdeas(i) << std::endl;
+		std::cout << "Cat: f ideas[" << i << "] is " << &f.getIdeas(i) << " " << &d.getIdeas(i) << std::endl;
 	}
 
 	std::cout << "===== test mandatory case by newed variables =====" << std::endl;
